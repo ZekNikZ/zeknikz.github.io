@@ -1,5 +1,84 @@
-﻿---
-layout: default
+---
 title: Home
 ---
-<h1>{{ "Hello World!" | downcase }}</h1>
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.zcarousel').slick({
+                arrows: true,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                dots: true,
+                slidesToShow: 3,
+                centerMode: true,
+                centerPadding: "20px",
+                responsive: [
+                    {
+                        breakpoint: 1090,
+                        settings: {
+                            arrows: false,
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
+    <div class="zcarousel">
+        <div>
+            <div class="header">
+                <h2>About Me</h2>
+                <img src="http://placehold.it/280x100?text=About%20Me">
+            </div>
+        </div>
+        <div>
+            <div class="header">
+                <h2>Projects</h2>
+                <img src="http://placehold.it/280x100?text=Projects">
+            </div>
+        </div>
+        <div>
+            <div class="header">
+                <h2>Blog</h2>
+                <img src="http://placehold.it/280x100?text=Blog">
+            </div>
+        </div>
+        <div>
+            <div class="header">
+                <h2>Games</h2>
+                <img src="http://placehold.it/280x100?text=Games">
+            </div>
+        </div>
+        <div>
+            <div class="header">
+                <h2>Tools</h2>
+                <img src="http://placehold.it/280x100?text=Tools">
+            </div>
+        </div>
+        <div>
+            <div class="header">
+                <h2>Mods</h2>
+                <img src="http://placehold.it/280x100?text=Mods">
+            </div>
+        </div>
+        <div>
+            <div class="header">
+                <h2>Guides</h2>
+                <img src="http://placehold.it/280x100?text=Guides">
+            </div>
+        </div>
+        <div>
+            <div class="header">
+                <h2>Contact Me</h2>
+                <img src="http://placehold.it/280x100?text=Contact%20Me">
+            </div>
+        </div>
+    </div>
+
+    {% include footer.html %}
+</body>
+</html>
