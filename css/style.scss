@@ -37,6 +37,25 @@ $maincolor: #326cff;
     font-size: 100px;
     margin-top: 50px;
     color: $maincolor;
+    display: block;
+}
+
+.namelogo:hover {
+    text-decoration: none;
+    color: $maincolor;
+}
+
+.socialicon {
+    display: block;
+}
+
+.socialicon img {
+    height: 40px;
+}
+
+.socialtray {
+    display: flex;
+    justify-content: center;
 }
 
 footer {
@@ -49,8 +68,8 @@ footer {
 }
 
 .borderimage {
-    -webkit-border-image: url(/img/border2.png) 5 space;
-    border-image: url(/img/border2.png) 5 space;
+    -webkit-border-image: url(/img/misc/border.png) 5 space;
+    border-image: url(/img/misc/border.png) 5 space;
 }
 
 .topborder {

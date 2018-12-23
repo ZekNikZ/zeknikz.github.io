@@ -47,7 +47,19 @@ title: Home
     <div class="container mainpage">
         <div class="row">
             <div class="col-12">
-                <h1 class="namelogo">MATTHEW MCCASKILL</h1>
+                <a class="namelogo" href="/">MATTHEW MCCASKILL</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="socialtray">
+                    {% for socialsite in site.data.social %}
+                    <a class="socialicon" href="{{ socialsite.link }}">
+                        <img src="/img/icons/{{ socialsite.site }}.svg" />
+                    </a>
+                    {% endfor %}
+                </div>
             </div>
         </div>
 
