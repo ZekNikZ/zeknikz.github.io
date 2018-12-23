@@ -1,7 +1,8 @@
-#- title: About Me
-#  link: /about.html
-#  desc: Learn more about me!
-#  img: "http://placehold.it/280x100?text=About%20Me"
+- title: About Me
+  link: /about.html
+  linktext: Lean a bit more about me
+  desc: "I am a Christian, computer scientist, board game enthusiast, and much more!"
+  img: "http://placehold.it/280x100?text=About%20Me"
 - title: Contact Me
   desc: "If you want to get in touch, please do. I try to respond to as many messages as I can!"
   link: "/contact.html"
