@@ -7,20 +7,36 @@ title: Home
 <body>
     <script type="text/javascript">
         $(document).ready(function () {
-            $('.zcarousel').slick({
+            $(".zcarousel").slick({
                 arrows: true,
                 autoplay: true,
-                autoplaySpeed: 4000,
+                autoplaySpeed: 8000,
                 dots: true,
                 slidesToShow: 3,
-                centerMode: true,
+                slidesToScroll: 3,
+                speed: 1200,
                 centerPadding: "20px",
+                lazyLoad: "progressive",
                 responsive: [
                     {
-                        breakpoint: 1090,
+                        breakpoint: 768,
                         settings: {
                             arrows: false,
-                            slidesToShow: 1
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            rows: 2,
+                            slidesPerRow: 1,
+                            speed: 400,
+                            autoplaySpeed: 6000
+                        }
+                    },
+                    {
+                        breakpoint: 1110,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                            speed: 800,
+                            autoplaySpeed: 6000
                         }
                     }
                 ]
@@ -28,53 +44,27 @@ title: Home
         });
     </script>
 
-    <div class="zcarousel">
-        <div>
-            <div class="header">
-                <h2>About Me</h2>
-                <img src="http://placehold.it/280x100?text=About%20Me">
+    <div class="container mainpage">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="namelogo">MATTHEW MCCASKILL</h1>
             </div>
         </div>
-        <div>
-            <div class="header">
-                <h2>Projects</h2>
-                <img src="http://placehold.it/280x100?text=Projects">
-            </div>
-        </div>
-        <div>
-            <div class="header">
-                <h2>Blog</h2>
-                <img src="http://placehold.it/280x100?text=Blog">
-            </div>
-        </div>
-        <div>
-            <div class="header">
-                <h2>Games</h2>
-                <img src="http://placehold.it/280x100?text=Games">
-            </div>
-        </div>
-        <div>
-            <div class="header">
-                <h2>Tools</h2>
-                <img src="http://placehold.it/280x100?text=Tools">
-            </div>
-        </div>
-        <div>
-            <div class="header">
-                <h2>Mods</h2>
-                <img src="http://placehold.it/280x100?text=Mods">
-            </div>
-        </div>
-        <div>
-            <div class="header">
-                <h2>Guides</h2>
-                <img src="http://placehold.it/280x100?text=Guides">
-            </div>
-        </div>
-        <div>
-            <div class="header">
-                <h2>Contact Me</h2>
-                <img src="http://placehold.it/280x100?text=Contact%20Me">
+
+        <div class="row">
+            <div class="col-12 topborder bottomborder">
+                <div class="zcarousel">
+                    {% for feature in site.data.features %}
+                    <div>
+                        <div class="page">
+                            <a class="title" href="{{ feature.link }}">{{ feature.title }}</a>
+                            <img src="{{ feature.img }}">
+                            <p>{{ feature.desc }}</p>
+                            <a class="link" href="{{ feature.link }}">{{ feature.linktext }} &raquo;</a>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>

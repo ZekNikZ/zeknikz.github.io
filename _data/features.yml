@@ -1,8 +1,44 @@
-- collection: projects
-  title: Pathfinder
-  image: ft-pathfinder.png
-  excerpt: Can you survive the dark maze with nothing but a torch and a pistol?
-- collection: projects
-  title: Ice Cream
-  image: ft-mario.png
-  excerpt: "You scream, I scream, we all scream for ice cream!"
+#- title: About Me
+#  link: /about.html
+#  desc: Learn more about me!
+#  img: "http://placehold.it/280x100?text=About%20Me"
+- title: Contact Me
+  desc: "If you want to get in touch, please do. I try to respond to as many messages as I can!"
+  link: "/contact.html"
+  linktext: "Send me an email"
+  img: "http://placehold.it/280x100?text=Contact%20Me"
+- title: Blog
+  desc: "Occasionally, I have a thing to say about something that I want to share with the world."
+  link: "/blog.html"
+  linktext: "Read more on my blog"
+  img: "http://placehold.it/280x100?text=Blog"
+- title: Games
+  desc: "I am an amateur game designer and thus, naturally, make a bunch of games."
+  link: "/games.html"
+  linktext: "Play some of my games"
+  img: "http://placehold.it/280x100?text=Games"
+- title: Mods
+  desc: "Making games is a big hobby of mine, but I love to mod games too!"
+  link: "/mods.html"
+  linktext: "Play around with mods"
+  img: "http://placehold.it/280x100?text=Mods"
+- title: "Other Projects"
+  desc: "I make a variety of miscellaneous personal projects, everything from proof-of-concepts to full products."
+  link: "/projects.html"
+  linktext: "Browse my other projects"
+  img: "http://placehold.it/280x100?text=Other%20Projects"
+- title: Guides
+  desc: "I often write guides to solve problems where I couldn't find a solution somewhere else."
+  link: "/guides.html"
+  linktext: "Get help to obscure problems"
+  img: "http://placehold.it/280x100?text=Guides"
+- title: Tools
+  desc: "I make and use many tools on a daily basis, so I need somewhere to keep all of them."
+  link: "/tools.html"
+  linktext: "(Ab)use some helpful tools"
+  img: "http://placehold.it/280x100?text=Tools"
+- title: Resources
+  desc: "I have compiled a list of resources and software that I often refer to."
+  link: "/resources.html"
+  linktext: "Browse external resources"
+  img: "http://placehold.it/280x100?text=Resources"
