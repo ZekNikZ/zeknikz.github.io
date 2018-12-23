@@ -67,6 +67,11 @@ footer {
     @extend .borderimage;
 }
 
+.nosideborder {
+    border-left: none;
+    border-right: none;
+}
+
 @media(min-width: 768px) {
     .zcarousel {
         .slick-slide {
