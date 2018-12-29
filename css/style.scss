@@ -8,6 +8,14 @@
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 18px;
+    height: 100%;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    opacity: 0.4;
+    margin-top: 15px;
 }
 
 $maincolor: #326cff;
@@ -45,8 +53,17 @@ $maincolor: #326cff;
     color: $maincolor;
 }
 
+.meblurb {
+    text-align: center;
+    width: 100%;
+    color: #555;
+    margin-top: -15px;
+}
+
 .socialicon {
     display: block;
+    padding: 10px;
+    padding-top: 0;
 }
 
 .socialicon img {
@@ -56,10 +73,7 @@ $maincolor: #326cff;
 .socialtray {
     display: flex;
     justify-content: center;
-}
-
-footer {
-    margin-bottom: 0;
+    margin-bottom: 10px
 }
 
 .zcarousel {
@@ -146,8 +160,6 @@ footer {
     }
 }
 
-
-
 .slick-prev:before,
 .slick-next:before {
     color: #444;
@@ -165,10 +177,3 @@ footer {
 .slick-current {
     opacity: 1;
 }
-
-
-/*
-.navbar {
-    font-weight: 500;
-}
-*/
