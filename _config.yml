@@ -5,3 +5,5 @@ collections:
     output: true
   guides:
     output: true
+  tools:
+    output: true
