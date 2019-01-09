@@ -1,12 +1,20 @@
 ---
 # Front matter comment to ensure Jekyll properly reads file.
 ---
+* {}
+
+$maincolor: #326cff;
+$bgcolor: #f5f5f5;
+$accentcolor1: #CCC;
+$accentcolor2: #555;
+$accentcolor3: #343a40;
+$accentcolor4: #212529;
 
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 18px;
     height: 100%;
-    background-color: #f5f5f5;
+    background-color: $bgcolor;
 }
 
 footer {
@@ -15,8 +23,6 @@ footer {
     opacity: 0.4;
     margin-top: 15px;
 }
-
-$maincolor: #326cff;
 
 .container.mainpage {
     margin-top: 0;
@@ -54,7 +60,7 @@ $maincolor: #326cff;
 .meblurb {
     text-align: center;
     width: 100%;
-    color: #555;
+    color: $accentcolor2;
     margin-top: -15px;
 }
 
@@ -176,27 +182,24 @@ $maincolor: #326cff;
     opacity: 1;
 }
 
-$project-item-width: 200px;
-$project-item-height: 300px;
+$project-item-width: 250px;
 
 .project-grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax($project-item-width, 1fr));
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: stretch;
     align-content: flex-start;
     margin: 30px;
+    grid-gap: 10px;
 }
 
 .project-item {
     flex-grow: 1;
-    height: $project-item-height;
-    width: $project-item-width;
+    width: 100%;
     display: block;
-    margin: 10px;
     padding: 10px;
     border: 2px solid $maincolor;
-    min-width: $project-item-width;
 }
 
 .project-img {
@@ -221,10 +224,24 @@ $project-item-height: 300px;
     }
 }
 
-.project-source-btn, .project-link-btn {
+.project-source-btn, .project-link-btn, .project-info-btn {
     width: 100%;
     text-align: left;
     border-radius: 0;
+    border-width: 0;
     padding: 4px 9px;
-    margin: 5px 0;
+    margin: 1px 0;
+    font-size: 80%;
+}
+
+.project-info-btn {
+    background-color: $maincolor;
+}
+
+.project-source-btn {
+    background-color: $accentcolor1;
+}
+
+.project-link-btn {
+    background-color: $accentcolor4;
 }

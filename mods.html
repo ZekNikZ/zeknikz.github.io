@@ -20,12 +20,12 @@ project_collection: mods
                 <img src="/img/icons/{{ project.project_group }}.png" title="{{ project.project_group }}" />
                 <h5>{{ project.title }}</h5>
             </div>
-            <a class="btn btn-dark project-source-btn" href="{{ project.source_url }}">GitHub</a>
+            <a class="btn btn-primary project-info-btn" href="{{ project.url }}">Learn More</a>
             {% if project.source_url %}
-                <a class="btn btn-dark project-source-btn" href="{{ project.source_url }}">GitHub</a>
+                <a class="btn btn-light project-source-btn" href="{{ project.source_url }}">GitHub</a>
             {% endif %}
             {% if project.project_url %}
-                <a class="btn btn-light project-link-btn" href="{{ project.project_url }}">{{ project.project_url_text }}</a>
+                <a class="btn btn-dark project-link-btn" href="{{ project.project_url }}">{{ project.project_url_text }}</a>
             {% endif %}
         </div>
     {% endfor %}
