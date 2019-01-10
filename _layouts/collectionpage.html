@@ -9,7 +9,8 @@ layout: default
     {% endif %}
     {% endfor %}
 
-    {% for project in collection.docs %}
+    {% assign projects = (collection.docs | sort: "date") | reverse %}
+    {% for project in projects %}
     <div class="project-item container">
         <a href="{{ project.url }}">
             <img class="project-img" src="/img/project-thumbs/{{ project.title }}.png" />
