@@ -1,10 +1,21 @@
 - name: Home
-  link: /
+  links:
 - name: About Me
-  link: /about.html
+  links: 
+  - about
+- name: Blog
+  links: 
+  - blog
 - name: Projects
-  link: /projects.html
-- name: Guides
-  link: /guides.html
+  links: 
+   - games
+   - mods
+   - projects
+- name: Resources
+  links: 
+  - guides
+  - tools
+  - resources
 - name: Contact Me
-  link: /Contact Me.html
+  links: 
+  - contact

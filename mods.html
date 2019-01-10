@@ -1,32 +1,5 @@
 ---
-title: Mods
-layout: default
+title: My Mods
+layout: collectionpage
 project_collection: mods
 ---
-<div class="project-grid">
-    {% assign collectionName = page.project_collection %}
-    {% for c in site.collections %}
-        {% if c.label == collectionName %}
-            {% assign collection = c %}
-        {% endif %}
-    {% endfor %}
-
-    {% for project in collection.docs %}
-        <div class="project-item container">
-            <a href="{{ project.url }}">
-                <img class="project-img" src="/img/project-thumbs/{{ project.title }}.png" />
-            </a>
-            <div class="project-title">
-                <img src="/img/icons/{{ project.project_group }}.png" title="{{ project.project_group }}" />
-                <h5>{{ project.title }}</h5>
-            </div>
-            <a class="btn btn-primary project-info-btn" href="{{ project.url }}">Learn More</a>
-            {% if project.source_url %}
-                <a class="btn btn-light project-source-btn" href="{{ project.source_url }}">GitHub</a>
-            {% endif %}
-            {% if project.project_url %}
-                <a class="btn btn-dark project-link-btn" href="{{ project.project_url }}">{{ project.project_url_text }}</a>
-            {% endif %}
-        </div>
-    {% endfor %}
-</div>

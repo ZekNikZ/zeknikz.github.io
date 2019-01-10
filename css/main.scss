@@ -182,6 +182,43 @@ footer {
     opacity: 1;
 }
 
+.navbar {
+    background-color: $bgcolor !important;
+}
+
+.navbar-brand {
+    font-family: 'Bahiana', cursive;
+    font-size: 100px;
+    color: $maincolor !important;
+    line-height: 100px;
+}
+
+.navbar-toggler {
+    border: 0;
+}
+
+.nav-link {
+    color: $maincolor !important;
+    transition: color 0.15s;
+    font-size: 20px;
+}
+.nav-link:hover {
+    color: darken($maincolor, 15%) !important;
+}
+.nav-item.active .nav-link {
+    font-weight: 600;
+}
+
+@media (max-width: 767px) {
+    .nav-link {
+        text-align: center;
+    }
+
+    .navbar-collapse {
+        background: $accentcolor1;
+    }
+}
+
 $project-item-width: 250px;
 
 .project-grid {
@@ -200,11 +237,12 @@ $project-item-width: 250px;
     display: block;
     padding: 10px;
     border: 2px solid $maincolor;
+    background-color: #f8f8f8;
 }
 
 .project-img {
     width: 100%;
-    border: 4px solid $maincolor;
+    /*border: 4px solid $maincolor;*/
 }
 
 .project-title {
@@ -235,13 +273,22 @@ $project-item-width: 250px;
 }
 
 .project-info-btn {
-    background-color: $maincolor;
+    background-color: $maincolor !important;
+}
+.project-info-btn:hover {
+    background-color: darken($maincolor, 5%) !important;
 }
 
 .project-source-btn {
-    background-color: $accentcolor1;
+    background-color: $accentcolor1 !important;
+}
+.project-source-btn:hover {
+    background-color: darken($accentcolor1, 5%) !important;
 }
 
 .project-link-btn {
-    background-color: $accentcolor4;
+    background-color: $accentcolor4 !important;
+}
+.project-link-btn:hover {
+    background-color: darken($accentcolor4, 5%) !important;
 }
