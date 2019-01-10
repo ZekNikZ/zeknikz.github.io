@@ -144,7 +144,7 @@ layout: empty
             }
 
             // If the mod has a specified Souvenir support status, record it
-            if ($("#souvenirSupport").val()) {
+            if ($("#souvenirSupport").val() !== "" && $("#souvenirSupport").val() !== "Unexamined") {
                 var so = {};
                 var sp = 0;
 
@@ -175,7 +175,7 @@ layout: empty
             }
 
             // Populate the results box with the result JSON after (possibly) un-replacing the Twitch Plays replacements
-            $(".resultBox").val("@Repo Maintainer\n```\n" + JSON.stringify(result, Object.keys(result).sort(), 2).replace(/@@@/g, '"').replace(/"?###"?/g, "").replace(/%%%/g, "\n") + "\n```");
+            $(".resultBox").val("@Repo Maintainer\n```\n    " + JSON.stringify(result, Object.keys(result).sort(), 6).replace(/@@@/g, '"').replace(/"?###"?/g, "").replace(/%%%/g, "\n").replace(/}$/, "    }") + ",\n```");
         }
 
         // Clear all form fields
