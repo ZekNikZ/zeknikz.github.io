@@ -1,21 +1,27 @@
 - name: Home
+  link: /
   links:
 - name: About Me
+  link: /about.html
   links: 
   - about
 - name: Blog
+  link: /blog.html
   links: 
   - blog
 - name: Projects
+  link: /projecthub.html
   links: 
    - games
    - mods
    - projects
 - name: Resources
+  link: /resourcehub.html
   links: 
   - guides
   - tools
   - resources
 - name: Contact Me
+  link: /contact.html
   links: 
   - contact

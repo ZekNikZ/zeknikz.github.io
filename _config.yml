@@ -2,13 +2,19 @@ title: Matthew McCaskill
 
 collections:
   games:
+    name: Games
     output: true
   mods:
+    name: Mods
     output: true
   misc:
+    name: Projects
     output: true
   guides:
+    name: Guides
     output: true
   tools:
+    name: Tools
     output: true
   resources:
+    name: Resources

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: ktanemod
 category: ktane
 project_group: "Keep Talking and Nobody Explodes"
 title: "Boolean Venn Diagram"
