@@ -193,6 +193,18 @@ footer {
     line-height: 100px;
 }
 
+@media(max-width: 385px) {
+    .navbar-brand {
+        font-size: 90px;
+    }
+}
+
+@media(max-width: 360px) {
+    .navbar-brand {
+        font-size: 80px;
+    }
+}
+
 .navbar-toggler {
     border: 0;
 }
